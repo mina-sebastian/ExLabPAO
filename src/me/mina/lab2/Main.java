@@ -1,4 +1,4 @@
-package me.mina.main;
+package me.mina.lab2;
 
 
 //1 Scrieți un program Java care afișează numerele divizibile cu 3 de la 1 la 99.
@@ -12,9 +12,6 @@ package me.mina.main;
 //Cum se formeaza secventa Fibonacci:
 //        1 2 (suma anterioarelor doua numere) ...
 
-
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {

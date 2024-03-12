@@ -1,4 +1,4 @@
-package me.mina.main;
+package me.mina.lab2;
 
 public class Exercitiu1 {
 

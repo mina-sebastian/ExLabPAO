@@ -1,4 +1,4 @@
-package me.mina.main;
+package me.mina.lab2;
 
 import java.util.Scanner;
 
