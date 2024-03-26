@@ -15,34 +15,6 @@ public class Application {
         System.out.println("Amintim".matches("[A-Z][a-z]+"));
         System.out.println("5663278890".matches("[0-9]+"));
         System.out.println("0731111111".matches("(072|073)[0-9]{7}"));
-        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-//        System.out.println("".matches(""));
-
     }
 
 }
