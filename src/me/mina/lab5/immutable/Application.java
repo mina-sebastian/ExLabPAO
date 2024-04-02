@@ -23,6 +23,7 @@ public class Application {
         pages.add(pag6);
         pages.add(pag7);
 
+
         DocumentImmutable documentImmutable = new DocumentImmutable("Document important", pages);
         Document document = new Document("Document nu asa important", pages);
 
