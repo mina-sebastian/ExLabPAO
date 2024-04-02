@@ -8,9 +8,9 @@ public class Main {
 
         Magazin mhp = new Magazin(100, "Magazin Haine", p, 50, 10);
         Magazin mhp_2 = new Magazin(103, "Magazin Haine", p, 900, 80);
-        Magazin mcp2 = new Magazin(101, "Magazin Chimicale", p2, 100, 20);
-        Magazin mcp2_2 = new Magazin(104, "Magazin Chimicale", p2, 300, 40);
-        Magazin map = new Magazin(102, "Magazin Alimentar", p, 200, 30);
+        Magazin mcp2 = new Magazin(104, "Magazin Chimicale", p2, 100, 20);
+        Magazin mcp2_2 = new Magazin(105, "Magazin Chimicale", p2, 300, 40);
+        Magazin map = new Magazin(106, "Magazin Alimentar", p, 200, 30);
 
         mhp.setChirie(new MagazinHaine());
         mhp_2.setChirie(new MagazinHaine());
