@@ -62,12 +62,14 @@ public class Main {
         tranzactii.add(t6Stornata);
         tranzactii.add(t7Stornata);
 
+        //Afisarea tranzactiilor
         System.out.println("Tranzactii:");
         for (Tranzactie t : tranzactii) {
             System.out.println(t);
         }
         System.out.println();
 
+        //Afisarea tarilor/zonei pentru care s-au facut plati
         System.out.println("Tari/Zone:");
         tranzactii.stream()
                 .map(t -> t.getPayment().getCurrency().getTara())
@@ -75,6 +77,7 @@ public class Main {
                 .forEach(System.out::println);
 
 
+        //Tranzactii pentru fiecare user
         List<User> users = new ArrayList<>();
         tranzactii.stream().map(t -> t.getPayment().getUser()).forEach(u -> {
             if (!users.contains(u)) {
