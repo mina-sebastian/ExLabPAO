@@ -1,7 +1,9 @@
 package me.mina.lab7.ex1;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
@@ -67,10 +69,10 @@ public class Main {
         System.out.println();
 
         System.out.println("Tari/Zone:");
-        for (Tranzactie t : tranzactii) {
-            System.out.println(t.getPayment().getCurrency().getTara());
-        }
-        System.out.println();
+        tranzactii.stream()
+                .map(t -> t.getPayment().getCurrency().getTara())
+                .distinct()
+                .forEach(System.out::println);
 
 
         List<User> users = new ArrayList<>();
@@ -79,6 +81,7 @@ public class Main {
                 users.add(u);
             }
         });
+        System.out.println();
 
         users.forEach(u -> {
             System.out.println("User: " + u.getNume() + " " + u.getPrenume());
