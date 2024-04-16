@@ -26,9 +26,10 @@ public class MainEx2CitireOcteti {
         }
 
         for (int i = 0; i < persoane.size(); i++) {
-            for (int j = 0; j < persoane.size(); j++) {
+            for (int j = i+1; j < persoane.size(); j++) {
                 if(i != j && persoane.get(i).getNume().equals(persoane.get(j).getNume()) && persoane.get(i).getPrenume().equals(persoane.get(j).getPrenume())) {
                     System.out.println(persoane.get(i));
+                    System.out.println(persoane.get(j));
                 }
             }
         }
