@@ -29,29 +29,32 @@ public class MainEx1ScriereChar {
 
         try(BufferedWriter writer = new BufferedWriter(new FileWriter("persoaneChar.txt", true))) {
             for(int i = 0; i < 5; i++) {
-                System.out.println("Introduceti datele persoanei " + (i + 1));
-                System.out.println("Introduceti numele");
-                String nume = scanner.nextLine();
-                System.out.println("Introduceti prenumele");
-                String prenume = scanner.nextLine();
-                System.out.println("Introduceti varsta");
-                int varsta = scanner.nextInt();
-                scanner.nextLine();
-                System.out.println("Introduceti suma");
-                double suma = scanner.nextDouble();
-                scanner.nextLine();
+                try {
+                    System.out.println("Introduceti datele persoanei " + (i + 1));
+                    System.out.println("Introduceti numele");
+                    String nume = scanner.nextLine();
+                    System.out.println("Introduceti prenumele");
+                    String prenume = scanner.nextLine();
+                    System.out.println("Introduceti varsta");
+                    int varsta = scanner.nextInt();
+                    scanner.nextLine();
+                    System.out.println("Introduceti suma");
+                    double suma = scanner.nextDouble();
+                    scanner.nextLine();
 
-                if (suma > 2000) {
-                    throw new NumarMareException();
+                    if (suma > 2000) {
+                        throw new NumarMareException();
+                    }
+
+                    System.out.println("Introduceti valuta");
+                    String valuta = scanner.nextLine();
+
+                    writer.write(nume + ";" + prenume + ";" + varsta + ";" + suma + ";" + valuta + "\n");
+                }catch (NumarMareException e) {
+                    System.out.println(e.getMessage());
+                    i--;
                 }
-
-                System.out.println("Introduceti valuta");
-                String valuta = scanner.nextLine();
-
-                writer.write(nume + ";" + prenume + ";" + varsta + ";" + suma + ";" + valuta + "\n");
             }
-        } catch (NumarMareException e) {
-            System.out.println(e.getMessage());
         } catch (IOException e) {
             e.printStackTrace();
         }

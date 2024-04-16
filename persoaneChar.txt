@@ -1,5 +1,5 @@
-Mina;Mina;20;300.0;RON
-Popescu;Ionescu;49;1999.0;GBP
-Baltescu;Ramona;81;17.8;RON
-Matvei;Andrei;19;300.0;RON
-Cornir;Radu;29;900.77;USD
+Mina;Mina;20;987.0;RON
+Andrei;Andrei;65;45.8;GBP
+Adi;Adrian;26;30.88;RON
+Anca;Anca;19;999.0;USD
+Aurel;Vlaicu;180;38.6;GBP

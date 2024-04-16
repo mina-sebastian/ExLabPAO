@@ -14,11 +14,10 @@ public class MainEx2CitireOcteti {
             while (true) {
                 try {
                     persoana = (Persoana) reader.readObject();
-                    if (persoana.nume.equals(persoana.prenume)) {
-                        System.out.println(persoana.nume + " " + persoana.prenume + " " + persoana.varsta + " " + persoana.suma + " " + persoana.valuta);
+                    if (persoana.getNume().equals(persoana.getPrenume())) {
+                        System.out.println(persoana.getNume() + " " + persoana.getPrenume() + " " + persoana.getVarsta() + " " + persoana.getSuma() + " " + persoana.getValuta());
                     }
                 } catch (EOFException e) {
-                    // End of file reached
                     break;
                 }
             }

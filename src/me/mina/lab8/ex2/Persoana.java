@@ -4,11 +4,11 @@ import java.io.Serializable;
 
 public class Persoana implements Serializable {
 
-    String nume;
-    String prenume;
-    int varsta;
-    double suma;
-    String valuta;
+    private String nume;
+    private String prenume;
+    private int varsta;
+    private double suma;
+    private String valuta;
 
     public Persoana(String nume, String prenume, int varsta, double suma, String valuta) {
         this.nume = nume;
@@ -18,4 +18,23 @@ public class Persoana implements Serializable {
         this.valuta = valuta;
     }
 
+    public String getNume() {
+        return nume;
+    }
+
+    public String getPrenume() {
+        return prenume;
+    }
+
+    public int getVarsta() {
+        return varsta;
+    }
+
+    public double getSuma() {
+        return suma;
+    }
+
+    public String getValuta() {
+        return valuta;
+    }
 }
