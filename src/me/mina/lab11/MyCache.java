@@ -11,12 +11,20 @@ public class MyCache extends Thread {
     public void run() {
         try{
             while(true){
+                boolean expiredAll = true;
                 Timestamp crt = new Timestamp(System.currentTimeMillis());
                 for (String key : cache.keySet()) {
                     StoredObject storedObject = (StoredObject) cache.get(key);
                     if (crt.after(storedObject.getExpirationTime())){
                         storedObject.setExpired(true);
+                    }else{
+                        expiredAll = false;
                     }
+                }
+                printCache();
+                if(expiredAll){
+                    System.out.println("All expired!");
+                    break;
                 }
                 Thread.sleep(2000);
             }
