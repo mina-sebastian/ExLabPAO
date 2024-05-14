@@ -27,7 +27,7 @@ public class MyCache extends Thread {
 
     public void addObject(String key, Object object, int ms){
         Timestamp expirationTime = new Timestamp(System.currentTimeMillis() + ms);
-        StoredObject storedObject = new StoredObject(object, false, expirationTime);
+        StoredObject storedObject = new StoredObject(object, expirationTime);
         cache.put(key, storedObject);
     }
 

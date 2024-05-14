@@ -8,9 +8,8 @@ public class StoredObject {
     private boolean expired;
     private Timestamp expirationTime;
 
-    public StoredObject(Object myInfo, boolean expired, Timestamp expirationTime) {
+    public StoredObject(Object myInfo, Timestamp expirationTime) {
         this.myInfo = myInfo;
-        this.expired = expired;
         this.expirationTime = expirationTime;
     }
 
